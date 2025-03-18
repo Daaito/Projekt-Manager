@@ -1,0 +1,11 @@
+﻿<Window x:Class="ProjectManager.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Project Manager" Height="450" Width="800">
+        <StackPanel>
+        <ListBox x:Name="ProjectList" ItemsSource="{Binding Projects}" DisplayMemberPath="Name"/>
+        <Button Content="Add Project" Click="AddProject_Click"/>
+        <Button Content="Delete Project" Click="DeleteProject_Click"/>
+        <Button Content="Edit" Click="EditProject_Click"/>
+        </StackPanel>
+</Window>
